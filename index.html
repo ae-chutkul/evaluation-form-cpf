@@ -85,8 +85,11 @@
       })
       .then(r => r.json())
       .then(() => {
-        document.getElementById('result').innerText = "บันทึกว่าไม่ยินยอมเรียบร้อยแล้ว";
-        document.getElementById('consentForm').reset();
+        // document.getElementById('result').innerText = "บันทึกว่าไม่ยินยอมเรียบร้อยแล้ว";
+        // document.getElementById('consentForm').reset();
+
+        // Redirect to Scoring page after submit No Consent
+        window.location.href = "scoring.html"
       });
     }
 
@@ -104,8 +107,11 @@
       })
       .then(r => r.json())
       .then(() => {
-        document.getElementById('result').innerText = "ส่งข้อมูลเรียบร้อยแล้ว";
-        document.getElementById('consentForm').reset();
+        // document.getElementById('result').innerText = "ส่งข้อมูลเรียบร้อยแล้ว";
+        // document.getElementById('consentForm').reset();
+
+        // Redirect to Scoring page after submit Consent
+        window.location.href = "scoring.html"
       });
     }
   </script>
